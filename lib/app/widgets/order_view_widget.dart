@@ -1,3 +1,5 @@
+import 'package:figma_practice/app/pages/bidoffered/bid_offered_page.dart';
+import 'package:figma_practice/app/pages/orderdetails/order_details_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -31,10 +33,21 @@ class _OrderViewWidgetState extends State<OrderViewWidget> {
               SizedBox(
                 height: 10,
               ),
-              Text(
-                AppString.textOrderId,
-                style: GoogleFonts.dmSans(
-                    fontSize: AppSize.textSize16, fontWeight: FontWeight.w700),
+              Row(
+                children: [
+                  Text(
+                    AppString.textOrderId,
+                    style: GoogleFonts.dmSans(
+                        fontSize: AppSize.textSize16,
+                        fontWeight: FontWeight.w700),
+                  ),
+                  Text(
+                    AppString.text27,
+                    style: GoogleFonts.dmSans(
+                        fontSize: AppSize.textSize16,
+                        fontWeight: FontWeight.w700),
+                  ),
+                ],
               ),
               SizedBox(
                 height: 12,
@@ -122,7 +135,12 @@ class _OrderViewWidgetState extends State<OrderViewWidget> {
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10)),
                             primary: AppColor.blue),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => BidOfferedPage()));
+                        },
                         child: Text(
                           AppString.textViewBid,
                           style: GoogleFonts.dmSans(
@@ -177,18 +195,28 @@ class _OrderViewWidgetState extends State<OrderViewWidget> {
                       SizedBox(
                         width: 10,
                       ),
-                      Container(
-                        height: 24,
-                        width: 24,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: AppColor.blueBackground,
+                      InkWell(
+                        child: Container(
+                          height: 24,
+                          width: 24,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: AppColor.blueBackground,
+                          ),
+                          child: SvgPicture.asset(
+                            AppImage.appArrow,
+                            height: 32,
+                            width: 32,
+                          ),
                         ),
-                        child: SvgPicture.asset(
-                          AppImage.appArrow,
-                          height: 32,
-                          width: 32,
-                        ),
+                        onTap: () {
+                          /*  Get.to(OrderDetailsPage()*/
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => OrderDetailsPage()),
+                          );
+                        },
                       ),
                     ],
                   )
