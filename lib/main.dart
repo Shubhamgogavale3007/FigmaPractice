@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'app/pages/myorders/home_page.dart';
+import 'app/pages/myorders/my_order_page.dart';
 import 'app/routes/app_pages.dart';
 import 'app/utilis/binding.dart';
 

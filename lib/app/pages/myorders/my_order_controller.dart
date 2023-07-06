@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 
 import '../orderdetails/order_details_page.dart';
 
-class HomeController extends GetxController {
+class MyOrderController extends GetxController {
   String abc = 'Hi';
 
   void navigateToDetails() {
