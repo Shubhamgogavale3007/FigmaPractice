@@ -1,5 +1,4 @@
-class AppString{
-
+class AppString {
   /// SCREEN 1 (MY ORDER)
 
   static const String textMyOrders = 'My Orders';
@@ -14,6 +13,6 @@ class AppString{
   static const String text450 = '\$450';
   static const String textViewBid = 'View Bid';
   static const String textOrderOn = 'Order On:';
-  static const String text20230704 = '2023-07-04:';
+  static const String text20230704 = '2023-07-04';
   static const String textDetails = 'Details';
 }
