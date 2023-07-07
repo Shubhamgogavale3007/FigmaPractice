@@ -10,4 +10,10 @@ class AppImage {
   /// BID OFFER
 
   static const String appFilter = '${filePathSVG}mdi_filter-outline.svg';
+
+  /// FILTER SCREEN
+
+  static const String appCircle = '${filePathSVG}circle.svg';
+  static const String appCheckBox = '${filePathSVG}carbon_checkbox.svg';
+  static const String appCancel = '${filePathSVG}iconoir_cancel.png';
 }

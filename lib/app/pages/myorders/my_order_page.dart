@@ -14,6 +14,7 @@ class MyOrdersPage extends GetView<MyOrderController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColor.white,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,

@@ -16,15 +16,22 @@ class OrderDetailsPage extends GetView<OrderDetailsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColor.white,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         elevation: 0,
         backgroundColor: Colors.transparent,
-        leading: CircleAvatar(
-          radius: 10,
-          backgroundColor: AppColor.greySearch,
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 20),
           child: InkWell(
-            child: SvgPicture.asset(AppImage.appBackArrow),
+            child: CircleAvatar(
+              radius: 10,
+              backgroundColor: AppColor.greySearch,
+
+              child: SvgPicture.asset(AppImage.appBackArrow),
+
+
+            ),
             onTap: () {
               /*  Get.to(MyOrdersPage()*/ Navigator.push(
                 context,

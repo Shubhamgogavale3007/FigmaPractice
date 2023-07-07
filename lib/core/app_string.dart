@@ -35,4 +35,13 @@ class AppString {
   /// BID OFFERED
 
   static const String textBidOffered = 'Bid Offered';
+
+  /// FILTER SCREEN
+
+  static const String textQuickFilters = 'Quick Filters';
+  static const String textLowestPrice = 'Lowest Price';
+  static const String textHighestPrice = 'Highest Price';
+  static const String textFreeDelivery = 'Free Delivery';
+  static const String textPickUp = 'Pick-up';
+  static const String textApplyFilter = 'Apply Filter';
 }
